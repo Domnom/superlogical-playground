@@ -1,0 +1,11 @@
+FROM node:12-alpine
+
+WORKDIR /usr/src/app
+
+RUN npm install -g ts-node nodemon
+
+EXPOSE 80
+EXPOSE 8009
+
+
+CMD ["yarn", "run", "start:dev"]
